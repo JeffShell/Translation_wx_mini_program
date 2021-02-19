@@ -6,10 +6,27 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#555555",
+    "navigationBarTitleText": "纯风翻译",
+		"navigationBarTextStyle": "white",
+    "bagckgroundColor": "#333"
   },
+	"tabBar":{
+		"borderStyle": "white",
+		"position": "bottom",
+		"color": "#595959",
+		"selectedColor": "#1c1b21",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "翻译"
+			},
+			{
+				"pagePath": "pages/history/history",
+				"text": "翻译"
+			}
+		]
+	},
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
