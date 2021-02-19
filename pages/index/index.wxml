@@ -1,4 +1,5 @@
 <!--index.wxml-->
-<view class="container">
-
+<view class="container page-index">
+	index
+	你好
 </view>
