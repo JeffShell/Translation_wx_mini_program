@@ -1,15 +1,14 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/history/history",
-    "pages/change/change"
+    "pages/change/change",
+    "pages/history/history"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#555555",
     "navigationBarTitleText": "纯风翻译",
-		"navigationBarTextStyle": "white",
-    "bagckgroundColor": "#333"
+		"navigationBarTextStyle": "white"
   },
 	"tabBar":{
 		"borderStyle": "white",

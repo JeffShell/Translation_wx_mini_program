@@ -10,12 +10,8 @@ Page({
 		curLang: {}
 	},
 	onLoad: function(options){
-		console.log('lonload..')
-		console.log(options)
 		if(options.query){
-			this.setData({
-				query: options.query
-			})
+			this.setData({query: options.query})
 		}
 	},
 	onShow: function(){
@@ -31,7 +27,6 @@ Page({
 		} else {
 			this.setData({'hideClearIcon': true})
 		}
-		console.log('focus')
 	},
 	onTapClose: function(){
 		this.setData({query: '', hideClearIcon: true})
