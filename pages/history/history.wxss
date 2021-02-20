@@ -1,5 +1,6 @@
 .history-list {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	padding: 40rpx;
 }
@@ -15,4 +16,10 @@
 }
 .item .result {
 	margin-top: 16rpx;
+}
+.clearItem {
+	font-size: 16px;
+	position: fixed;
+	bottom: 50rpx;
+	right: 50rpx;
 }

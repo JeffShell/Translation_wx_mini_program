@@ -7,4 +7,7 @@
 			<view class="result">{{item.result}}</view>
 		</view>
 	</view>
+		<button bindtap="onClearItem" class="clearItem" size="mini" type="warn">
+			清除所有
+		</button>
 </scroll-view>

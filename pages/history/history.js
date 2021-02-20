@@ -12,5 +12,11 @@ Page({
 		wx.reLaunch({
 			url: `/pages/index/index?query= ${e.currentTarget.dataset.query}`
 		})
+	},
+	onClearItem: function(){
+		wx.clearStorage()
+		wx.reLaunch({
+			url:"/pages/history/history"
+		})
 	}
 })
