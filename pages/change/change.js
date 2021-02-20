@@ -14,7 +14,6 @@ Page({
   onTapItem: function(e) {
     let langObj = e.currentTarget.dataset
 		console.log("=========")
-		console.log(e)
     wx.setStorageSync('language', langObj)
     this.setData({'curLang': langObj})
     app.globalData.curLang = langObj
