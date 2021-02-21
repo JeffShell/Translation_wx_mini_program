@@ -4,6 +4,9 @@ App({
 		this.globalData.curLang = wx.getStorageSync("curLang") || this.globalData.langList[0]
 	},
 	globalData: {
+		onChange(event) {
+			this.setData({ active: event.detail });
+		},
 		curLang: {},
 		langList: [
 			{

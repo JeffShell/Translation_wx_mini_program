@@ -1,0 +1,11 @@
+<van-tabbar active="{{ active }}" bind:change="onChange">
+<!--  <van-tabbar-item wx:for="{{list}}" wx:key="index" data-path="{{item.pagePath}}" data-index="{{index}}"  bindtap="onChange">
+		{{item.text}}
+	</van-tabbar-item> -->
+	<van-tabbar-item>
+		翻译
+	</van-tabbar-item>
+	<van-tabbar-item>
+		历史
+	</van-tabbar-item>
+</van-tabbar>

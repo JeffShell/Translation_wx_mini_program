@@ -1,20 +1,20 @@
 {
   "pages":[
-    "pages/history/history",
     "pages/index/index",
+    "pages/history/history",
     "pages/change/change"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#555555",
     "navigationBarTitleText": "纯风翻译",
-		"navigationBarTextStyle": "white"
-  },
+		"navigationBarTextStyle": "white",
+		"navigationStyle":"custom"
+	},
 	"tabBar":{
+		"custom": true,
 		"borderStyle": "white",
-		"position": "top",
-		"color": "#595959",
-		"selectedColor": "#1c1b21",
+		"position": "bottom",
 		"list": [
 			{
 				"pagePath": "pages/index/index",
@@ -26,6 +26,5 @@
 			}
 		]
 	},
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

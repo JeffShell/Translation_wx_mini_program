@@ -7,8 +7,9 @@ Page({
 		query: '',
 		hideClearIcon: true,
 		result: [],
-		curLang: {}
-	},
+		curLang: {},
+		active: 0,
+	},  
 	onLoad: function(options){
 		if(options.query){
 			this.setData({query: options.query})
