@@ -10,7 +10,10 @@
     "navigationBarTitleText": "纯风翻译",
 		"navigationBarTextStyle": "white",
 		"navigationStyle":"custom"
-	},
+	}, 
+	"usingComponents": {
+	  "van-nav-bar": "./nav-bar/nav-bar"
+	 },
 	"tabBar":{
 		"custom": true,
 		"borderStyle": "white",

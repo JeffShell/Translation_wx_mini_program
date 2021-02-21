@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<van-nav-bar></van-nav-bar>
 <view class="container">
   <view class="change">
     <navigator url="/pages/change/change" hover-class="navigator-hover">

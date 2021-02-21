@@ -1,4 +1,5 @@
 <!--history.wxml-->
+<van-nav-bar></van-nav-bar>
 <scroll-view scroll-y class="container">
 	<view class="history-list">
 		<view class="title">翻译历史</view>
