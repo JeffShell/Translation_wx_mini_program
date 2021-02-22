@@ -17,8 +17,11 @@ Component({
       const data = event.currentTarget.dataset
       const url = data.path
 			const that = this
-			wx.switchTab({url})
-			that.setData({active: data.index})
+			that.setData({
+				active: data.index
+			}, () => {
+				wx.switchTab({url})
+			})
 		}
   }
 });
