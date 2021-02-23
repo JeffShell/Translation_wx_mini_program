@@ -10,6 +10,9 @@
 }
 .item {
 	margin-top: 40rpx;
+	padding: 15rpx;
+	background-color: #fff;
+	box-shadow:0 5rpx 10rpx #aaa;
 }
 .item .query{
 	color: #8995a1;
