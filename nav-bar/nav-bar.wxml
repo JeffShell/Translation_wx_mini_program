@@ -1,6 +1,0 @@
-<van-nav-bar
-  title="纯风翻译"
-	fixed="true"
-	placeholder="true"
-	custom-style="height:{{ButtonHeight}}px;margin-top:{{statusBarHeight+8}}px;margin-bottom:8px;"
-/>

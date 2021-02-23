@@ -1,6 +1,0 @@
-<van-tabbar active="{{ active }}">
- <van-tabbar-item wx:for="{{list}}" wx:key="index" data-path="{{item.pagePath}}" data-index="{{index}}"  bindtap="onChange">
-		{{item.text}}
-	</van-tabbar-item>
-
-</van-tabbar>
