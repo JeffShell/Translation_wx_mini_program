@@ -1,27 +1,31 @@
 /**index.wxss**/
 .change {
-	color: #8995a1;
-	font-size: 24rpx;
+	color: #fff;
+	background-color: pink;
+	background-color: #009384;
+	font-size: 35rpx;
 	padding: 20rpx 40rpx;
 	display: flex;
 	align-items: center;
+	box-shadow:0px 8rpx 30rpx #aaa;
 }
 .change .icon-right{
 	color: #888;
 }
 .change .icon-down{
-	color: #8995a1;
-	font-size: 20rpx;
+	color: #fff;
+	font-size: 35rpx;
 }
 .input-area {
 	position: relative;
 }
 .textarea-wrap {
-	background: #fff;
-	border-bottom: 1px solid #c7cee0;
+	font-size: 35rpx;
+	background: #009384;
 }
 .input-area textarea {
-	background-color: #fff;
+	background: #009384;
+	color: #fff;
 	padding: 30rpx 0 30rpx 30rpx;
 	width: calc(100% - 48rpx);
 	margin: 0;
@@ -35,15 +39,17 @@
 	font-size: 40rpx;
 	color: #888;
 }
-.input-area .text-area {
+.text-area {
 	min-height: 80rpx;
+	margin: 30rpx 15rpx;
 	padding: 40rpx;
 	background-color: #fff;
+	box-shadow:0px 8rpx 30rpx #aaa;
 }
-.input-area .text-title {
+.text-title {
   font-size: 28rpx;
   color: #8995a1;
 }
-.input-area .text-result {
+.text-result {
   padding: 20rpx 0;
 }
