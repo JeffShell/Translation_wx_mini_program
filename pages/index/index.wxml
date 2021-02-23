@@ -4,17 +4,17 @@
   <view class="input-area">
     <text class="iconfont icon-close" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
     <view class="textarea-wrap">
-      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8bcdc7'  bindinput='onInput' bindconfirm='onConfirm'  value="{{query}}"></textarea>
+      <textarea placeholder='请输入要翻译的文本' placeholder-style='color: #8bcdc7'  bindinput='onInput' value="{{query}}"></textarea>
     </view>
     
-  <view class="change">
-    <navigator url="/pages/change/change" hover-class="navigator-hover">
-      <block>
-        <text>{{curLang.chs}} </text>
-        <text class="iconfont icon-down"></text>
-      </block> 
-    </navigator>
-  </view>
+    <view class="change">
+      <navigator url="/pages/change/change" hover-class="navigator-hover">
+        <block>
+          <text>{{curLang.chs}} </text>
+          <text class="iconfont icon-down"></text>
+        </block> 
+      </navigator>
+    </view>
   </view>
 
     <view class="text-area">
@@ -24,6 +24,9 @@
       </view>
     </view>
   </view>
+  <button class="input-translate" bindtap='onConfirm'>
+    <text class="iconfont icon-fanyi"></text>
+  </button>
   <view class="copyright">
     <text>© Jeffshell</text>
   </view>

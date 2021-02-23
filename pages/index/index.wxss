@@ -14,7 +14,7 @@
 }
 .change .icon-down{
 	color: #fff;
-	font-size: 35rpx;
+	font-size: 20rpx;
 }
 .input-area {
 	position: relative;
@@ -52,4 +52,20 @@
 }
 .text-result {
   padding: 20rpx 0;
+}
+.input-translate {
+	width: 120rpx;
+	height: 120rpx;
+	border: 0;
+	border-radius: 50%;
+	background-color: #009384;
+	box-shadow:0px 8rpx 30rpx #aaa;
+	line-height: 120rpx;
+	position: absolute;
+	bottom: 60rpx;
+	right: 60rpx;
+}
+.input-translate .icon-fanyi {
+	font-size: 60rpx;
+	color: #fff;
 }
