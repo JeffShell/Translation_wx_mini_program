@@ -9,6 +9,8 @@ Page({
 		result: [],
 		curLang: {},
 		active: 0,
+		numberWords: 0
+		
 	},  
 	onLoad: function(options){
 		if(options.query){
@@ -23,6 +25,7 @@ Page({
 	},
 	onInput: function(e){
 		this.setData({'query': e.detail.value})
+		this.setData({'numberWords': e.detail.value.length})
 		if(this.data.query.length > 0){
 			this.setData({'hideClearIcon': false})
 		} else {

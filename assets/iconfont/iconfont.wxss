@@ -1,5 +1,6 @@
 @font-face {font-family: "iconfont";
-  src: url('//at.alicdn.com/t/font_2384231_83l61ycyjlx.ttf?t=1614094535960') format('truetype')
+  src: url('//at.alicdn.com/t/font_2384231_qn9qyhktcm.ttf?t=1614098640239') format('truetype')
+  
 }
 
 .iconfont {
@@ -8,6 +9,10 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cha:before {
+  content: "\e609";
 }
 
 .icon-down:before {

@@ -8,6 +8,6 @@
 		</view>
 	</view>
 		<button bindtap="onClearItem" class="clearItem" size="mini" type="warn">
-			清除所有
+			<text class="iconfont icon-cha"></text>
 		</button>
 </scroll-view>

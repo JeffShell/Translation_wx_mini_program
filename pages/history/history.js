@@ -14,9 +14,22 @@ Page({
 		})
 	},
 	onClearItem: function(){
-		wx.clearStorage()
-		wx.reLaunch({
-			url:"/pages/history/history"
+		wx.showModal({
+			title: "是否清除所有记录？",
+			showCancel: true,
+			success(res){
+				if (res.confirm) {
+					wx.startPullDownRefresh({
+						complete(){
+							wx.clearStorage()
+						}
+					})
+					this.onShow();
+				} else if (res.cancel) {
+				  console.log('用户点击取消')
+				}
+			}
 		})
+		
 	}
 })

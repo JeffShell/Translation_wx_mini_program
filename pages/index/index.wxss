@@ -1,7 +1,6 @@
 /**index.wxss**/
 .change {
 	color: #fff;
-	background-color: pink;
 	background-color: #009384;
 	font-size: 35rpx;
 	padding: 20rpx 40rpx;
@@ -9,12 +8,14 @@
 	align-items: center;
 	box-shadow:0px 8rpx 30rpx #aaa;
 }
-.change .icon-right{
-	color: #888;
-}
 .change .icon-down{
 	color: #fff;
 	font-size: 20rpx;
+}
+.change .left-number {
+	color: #8bcdc7;
+	position: absolute;
+	right: 50rpx;
 }
 .input-area {
 	position: relative;

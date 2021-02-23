@@ -7,8 +7,12 @@
   "window":{
     "navigationBarBackgroundColor": "#009384",
     "navigationBarTitleText": "纯风翻译",
-	"navigationBarTextStyle": "white"
+	"navigationBarTextStyle": "white",
+	"enablePullDownRefresh": true
 	}, 
+	"usingComponents": {
+		"mp-loading": "weui-miniprogram/loading/loading"
+	},
 	"tabBar": {
 		"borderStyle": "white",
 		"position": "bottom",

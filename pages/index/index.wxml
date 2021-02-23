@@ -12,6 +12,7 @@
         <block>
           <text>{{curLang.chs}} </text>
           <text class="iconfont icon-down"></text>
+          <text class="left-number">{{numberWords}} 字数</text>
         </block> 
       </navigator>
     </view>
