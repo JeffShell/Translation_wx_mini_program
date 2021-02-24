@@ -38,6 +38,11 @@ Page({
 	},
 	onConfirm: function(){
 		if (!this.data.query) return
+		wx.showToast({
+			title: "翻译中",
+			icon: 'none',
+			duration: 1500,
+		})
 		translate(this.data.query, {from: 'auto', to: this.data.curLang.lang}).then(res => {
 			this.setData({'result': res.trans_result})
 			let history = wx.getStorageSync('history') || []
