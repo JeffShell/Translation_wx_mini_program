@@ -27,7 +27,7 @@
 	border-radius: 50%;
 	line-height: 120rpx;
 	box-shadow:0px 8rpx 30rpx #aaa;
-	position: absolute;
+	position: fixed;
 	bottom: 60rpx;
 	right: 60rpx;
 }

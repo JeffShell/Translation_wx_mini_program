@@ -6,8 +6,6 @@ Page({
     langList: app.globalData.langList
   },
   onShow: function () {
-		console.log('change：')
-		console.log(app.globalData.curLang)
     this.setData({ curLang: app.globalData.curLang })
 
   },
