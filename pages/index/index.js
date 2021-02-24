@@ -9,8 +9,8 @@ Page({
 		result: [],
 		curLang: {},
 		active: 0,
-		numberWords: 0
-		
+		numberWords: 0,
+		canUse: true
 	},  
 	onLoad: function(options){
 		if(options.query){
@@ -24,8 +24,9 @@ Page({
 		}
 	},
 	onInput: function(e){
-		this.setData({'query': e.detail.value})
-		this.setData({'numberWords': e.detail.value.length})
+		let word = e.detail.value
+		this.setData({'numberWords': word.length})
+		this.setData({'query': word})
 		if(this.data.query.length > 0){
 			this.setData({'hideClearIcon': false})
 		} else {
@@ -44,5 +45,14 @@ Page({
 			history.length = history.length > 10 ? 10 : history.length
 			wx.setStorageSync('history', history)
 		})
+	},
+	throttle: function(){
+		if(this.data.canUse){
+			this.onConfirm.apply(this, arguments)
+			this.setData({"canUse": false})
+			setTimeout(()=>{
+				this.setData({"canUse": true})
+			}, 1500)
+		}
 	}
 })

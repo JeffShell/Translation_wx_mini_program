@@ -25,7 +25,7 @@
       </view>
     </view>
   </view>
-  <button class="input-translate" bindtap='onConfirm'>
+  <button class="input-translate" bindtap='throttle'>
     <text class="iconfont icon-fanyi"></text>
   </button>
   <view class="copyright">
