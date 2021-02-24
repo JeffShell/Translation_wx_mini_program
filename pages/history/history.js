@@ -14,19 +14,22 @@ Page({
 		})
 	},
 	onClearItem: function(){
+		const that = this
 		wx.showModal({
 			title: "是否清除所有记录？",
 			showCancel: true,
 			success(res){
 				if (res.confirm) {
-					wx.startPullDownRefresh({
-						complete(){
-							wx.clearStorage()
-						}
-					})
-					this.onShow();
-				} else if (res.cancel) {
-				  console.log('用户点击取消')
+					if(that.data.history){
+						wx.clearStorage()
+						that.onShow();
+					} else {
+						wx.showToast({
+							title: "没有记录哦",
+							icon: 'none',
+							duration: 1000,
+						})
+					}
 				}
 			}
 		})

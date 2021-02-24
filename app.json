@@ -10,9 +10,6 @@
 	"navigationBarTextStyle": "white",
 	"enablePullDownRefresh": true
 	}, 
-	"usingComponents": {
-		"mp-loading": "weui-miniprogram/loading/loading"
-	},
 	"tabBar": {
 		"borderStyle": "white",
 		"position": "bottom",
